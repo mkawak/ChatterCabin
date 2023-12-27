@@ -42,6 +42,15 @@
             /*font-size: 16px; !* Default font size *!*/
         }
 
+        .custom-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .custom-link:hover {
+            text-decoration: underline;
+        }
+
         /* Adjusted media query for mobile screens */
         @media (max-width: 768px) {
             /* Hide text labels on smaller screens */
@@ -90,7 +99,7 @@
             </a>
         {% else %}
             <!-- Show text only on the front page -->
-            <a href="/" id="chatter_cabin" class="text-xl text-white">Chatter Cabin</a>
+            <a href="/" id="chatter_cabin" class="text-xl text-white">ChatterCabin</a>
         {% endif %}
     </div>
     <!-- Icons and Buttons -->
@@ -137,8 +146,8 @@
 {% endblock %}
 <footer class="mt-auto py-4 text-center" style="background: linear-gradient(to right, #383838, #000000);">
     <p class="text-white">
-        © 2023 ChatterCabin by
-        <a href="https://majdkawak.com" target="_blank" rel="noopener noreferrer" class="text-white underline">
+        &copy; 2023 ChatterCabin by
+        <a href="https://www.majdkawak.com" target="_blank" rel="noopener noreferrer" class="custom-link">
             Majd Kawak
         </a>
     </p>
