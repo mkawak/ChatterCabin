@@ -1,13 +1,8 @@
 from django.urls import path
-from . import consumers
-from ChatterCabin import settings
 
-if settings.DEBUG == True:
-    websocket_urlpatterns = [
-        path('ws/<str:room_name>/', consumers.ChatConsumer.as_asgi()),
-    ]
+from .consumers import ChatConsumer
 
-else:
-    websocket_urlpatterns = [
-        path('wss/<str:room_name>/', consumers.ChatConsumer.as_asgi()),
-    ]
+
+websocket_urlpatterns = [
+    path("ws/<slug:room_name>/", ChatConsumer.as_asgi()),
+]

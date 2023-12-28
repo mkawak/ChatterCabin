@@ -1,25 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
 
-ChatNest.zip
-.idea/
-/myenv
-Icon?
+# Virtual environments and local configuration
+.env
+.env.*
+!.env.example
+.django_secret_key
+.venv/
+venv/
+myenv/
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-.pnp.js
-
-# testing
-/coverage
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Frontend dependencies and output
+node_modules/
+build/
+coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Django-generated static output
+staticfiles/
+
+# IDE and operating-system files
+.idea/
+.DS_Store
+Icon?
+
+# Local archives
+*.zip
